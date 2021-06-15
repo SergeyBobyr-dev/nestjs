@@ -103,12 +103,12 @@ export class Books extends Model<Books> {
 
     
     @BelongsTo(()=> Users)
-    users: Users[]
+    users: Users
 
     @BelongsTo(()=> Categories)
-    categories: Categories[]
+    categories: Categories
 
     @BelongsTo(()=> Type)
-    type: Type[]
+    type: Type
 
 };
