@@ -1,8 +1,8 @@
 import { IsNotEmpty, IsString } from "class-validator";
 
-export class CreateTypeDto{
-
+export class GetTokenDto{
+    
     @IsNotEmpty()
     @IsString()
-    readonly name: string;
+    readonly token: string;
 }

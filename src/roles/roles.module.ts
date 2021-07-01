@@ -15,6 +15,7 @@ import { RolesService } from './roles.service';
       envFilePath: '.env'
     }),
     SequelizeModule.forFeature([Roles, Apis, Roles_apis])
-  ]
+  ],
+  
 })
 export class RolesModule {}

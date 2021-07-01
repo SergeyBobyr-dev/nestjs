@@ -3,7 +3,8 @@ import { Books } from "src/books/models/books.model";
 import { Roles } from "./roles.model";
 
 @Table({
-
+    // createdAt: false,
+    // updatedAt: false,
     tableName: 'users',
     modelName: 'users',
 })
