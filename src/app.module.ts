@@ -7,6 +7,7 @@ import { BooksModule } from './books/books.module';
 import { AuthModule } from './auth/auth.module';
 import { EmailModule } from './share/email/email.module';
 import { sequelizeConfig } from './config/sequelize.config';
+import { TestModule } from './test/test.module';
 
 
 
@@ -23,6 +24,7 @@ import { sequelizeConfig } from './config/sequelize.config';
     BooksModule,
     AuthModule,
     EmailModule,
+    TestModule,
   ]
 })
 export class AppModule {}

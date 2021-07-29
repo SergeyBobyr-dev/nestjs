@@ -16,5 +16,6 @@ export const sequelizeConfig: SequelizeModuleOptions = {
     password: process.env.POSTGRES_PASSWORD,
     database: process.env.POSTGRES_DB,
     models: [Users, Roles, Apis, Roles_apis, Books, Type, Categories],
-    autoLoadModels: true
+    autoLoadModels: true,
+    synchronize: true
 }

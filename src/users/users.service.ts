@@ -1,4 +1,4 @@
-import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable, Logger } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { InjectModel } from '@nestjs/sequelize';
 import { CreateUserDto } from './dto/create-user.dto';
@@ -108,7 +108,7 @@ export class UsersService {
 
     async getAllUsers(): Promise<Users[]> | undefined {
         try {
-            const users = this.userRepository.findAll(
+            const users = await this.userRepository.findAll(
                 { 
                     include: {model: this.rolesRepository}
                 }
